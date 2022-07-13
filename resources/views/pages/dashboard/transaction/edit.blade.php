@@ -23,7 +23,7 @@
                     </div>
                 </div>
             @endif
-            <form action="{{ route('dashboard.transaction.update', $product->id) }}" class="w-full" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('dashboard.transaction.update', $transaction->id) }}" class="w-full" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div class="flex flex-wrap mx-3 mb-6">
